@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enum4linuxng"
+version = "1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "impacket>=0.9.21",
+    "ldap3",
+    "PyYAML>=5.1",
+]
+
+[project.scripts]
+enum4linuxng = "enum4linuxng:main"
